@@ -10,4 +10,15 @@ body {
 	font-size: 62.5%;
 	font-family: "Montserrat", sans-serif;
 	color: #fff;
+	background-color: rgba(38, 38, 38);
+}
+
+h1,
+h2 {
+	font-family: "Abril Fatface", cursive;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	font-size: 3rem;
 }

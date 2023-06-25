@@ -1,0 +1,89 @@
+.firstSection {
+	position: relative;
+	&-title {
+		text-align: center;
+	}
+
+	&-description {
+		text-align: center;
+		margin: 1.5em auto;
+		font-size: 1.5rem;
+		padding: 0 8em;
+	}
+}
+
+.firstSectionSvg--Box {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	// background-color: #fff;
+}
+
+.svg1 {
+	position: absolute;
+	right: 0;
+	top: -10em;
+	z-index: -1;
+}
+
+.svg2 {
+	position: absolute;
+	bottom: 5em;
+	right: 45em;
+}
+
+.svg3 {
+	position: absolute;
+	bottom: 8em;
+	left: 35em;
+}
+
+.svg4 {
+	position: absolute;
+	top: 30em;
+	left: -10em;
+}
+
+.svg6 {
+	position: absolute;
+	bottom: 10em;
+	left: -15em;
+}
+
+.svg8 {
+	position: absolute;
+	bottom: 15em;
+	right: -33em;
+}
+
+.svg9 {
+	position: absolute;
+	right: -15em;
+	top: 20em;
+}
+
+.firstSection-Box {
+	text-align: center;
+	margin-top: 7em;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8em;
+}
+
+.firstSection-Box--title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin: 1.5em 0;
+}
+
+.firstSection-Box--img {
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.firstSection-Box--text {
+	font-size: 1rem;
+	text-align: center;
+	padding: 0 3em;
+}
