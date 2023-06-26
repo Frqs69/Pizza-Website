@@ -1,0 +1,29 @@
+.secondSection {
+	background-image: url("/secondSectionBg.png");
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+
+.secondSection-rightBox {
+	// background-color: #fff;
+	grid-column: 2/3;
+	margin-left: 7rem;
+}
+
+.secondSection-description {
+	margin: 4em 0;
+	font-size: 1.5rem;
+	width: 70%;
+}
+
+.secondSection-title {
+	font-size: 5rem;
+}
+
+.secondSection-button {
+	width: 40%;
+}
