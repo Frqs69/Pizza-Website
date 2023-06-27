@@ -12,6 +12,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	color: #fff;
 	background-color: rgba(38, 38, 38);
+	overflow-x: hidden;
 }
 
 h1,

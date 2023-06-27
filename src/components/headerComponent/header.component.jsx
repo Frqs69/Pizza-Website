@@ -5,7 +5,7 @@ export default function HeaderComponent() {
 		<header className='headerSection'>
 			<nav>
 				<img src='/logo.svg' alt='logo' />
-				<ul className='nav-links'>
+				<ul className='nav-links--desktop'>
 					<li>
 						<a href='#'>Home</a>
 					</li>

@@ -1,10 +1,10 @@
 .headerSection {
-	padding: 0 15em;
-	padding-top: 7em;
+	padding: 3em;
 	position: relative;
 	height: 100vh;
 	background-image: url("/public/HeroImage.png");
 	background-size: cover;
+	background-position: right;
 }
 
 .headerSection::before {
@@ -14,11 +14,7 @@
 	left: 0;
 	height: 100vh;
 	width: 100%;
-	background: linear-gradient(
-		90deg,
-		rgba(38, 38, 38, 1) 35%,
-		rgba(255, 0, 0, 0) 70%
-	);
+	background: rgba(0, 0, 0, 0.6);
 }
 
 nav {
@@ -26,44 +22,33 @@ nav {
 	align-items: center;
 }
 
-.nav-links {
-	display: flex;
-	gap: 1em;
-	margin-left: 4em;
-	font-size: 1.3rem;
-	text-transform: uppercase;
-	position: relative;
-
-	li {
-		list-style: none;
-	}
+.nav-links--desktop {
+	display: none;
 }
 
 h1 {
 	position: relative;
-	font-size: 5rem;
-	margin-bottom: 0.5em;
+	font-size: 3rem;
+	margin-bottom: 3em;
 	font-family: "Abril Fatface", cursive;
 }
 
 .headerBox-text {
 	position: relative;
 	font-size: 1.5rem;
-	margin-bottom: 3em;
+	margin: 2em 0;
 	line-height: 1.5em;
-	width: 80%;
 }
 
 button {
 	position: relative;
-	width: 50%;
 	color: rgba(38, 38, 38);
 	background-color: #fff;
 	border-radius: 50px;
 	border: none;
 	font-weight: bold;
 	padding: 1em 2em;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 img {
@@ -71,11 +56,69 @@ img {
 }
 
 .headerBox {
+	margin-top: 10em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 50%;
-	margin-top: 15em;
-	margin-left: 17em;
-	// height: 100%;
+}
+
+@media (min-width: 768px) {
+	.headerSection {
+		padding: 0 15em;
+		padding-top: 7em;
+		position: relative;
+		height: 100vh;
+		background-image: url("/public/HeroImage.png");
+		background-size: cover;
+	}
+
+	.headerSection::before {
+		background: linear-gradient(
+			90deg,
+			rgba(38, 38, 38, 1) 35%,
+			rgba(255, 0, 0, 0) 70%
+		);
+	}
+
+	.nav-links--desktop {
+		display: flex;
+		gap: 1em;
+		margin-left: 4em;
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		position: relative;
+
+		li {
+			list-style: none;
+		}
+	}
+
+	h1 {
+		position: relative;
+		font-size: 5rem;
+		margin-bottom: 0.5em;
+		font-family: "Abril Fatface", cursive;
+	}
+
+	.headerBox-text {
+		position: relative;
+		font-size: 1.5rem;
+		margin-bottom: 3em;
+		line-height: 1.5em;
+		width: 80%;
+	}
+
+	button {
+		width: 50%;
+		font-size: 1.5rem;
+	}
+
+	.headerBox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		margin-top: 15em;
+		margin-left: 17em;
+	}
 }

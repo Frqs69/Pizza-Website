@@ -5,7 +5,7 @@ export default function SectionThree() {
 	return (
 		<section className='firstSection wrapper' id='About'>
 			<SvgBackground />
-			<h2>Statistics</h2>
+			<h2 className='firstSection-title'>Statistics</h2>
 			<p className='section-description'>
 				Join thousands of satisfied pizza lovers who have experienced our
 				top-quality pies and keep coming back for more!

@@ -2,8 +2,6 @@
 	text-align: center;
 	margin: 1.5em auto;
 	font-size: 1.5rem;
-	padding: 0 8em;
-	width: 90%;
 }
 
 .sectionThree {
@@ -15,11 +13,6 @@
 .thirdSection-Box {
 	text-align: center;
 	margin-top: 7em;
-	display: flex;
-	justify-content: space-between;
-	gap: 2em;
-	width: 80%;
-	margin-bottom: 22em;
 }
 
 .thirdSection-Box--title {
@@ -48,4 +41,58 @@
 	border-radius: 50%;
 	padding: 5em;
 	margin-bottom: 4em;
+}
+
+@media (min-width: 768px) {
+	.section-description {
+		text-align: center;
+		margin: 1.5em auto;
+		font-size: 1.5rem;
+		padding: 0 8em;
+		width: 90%;
+	}
+
+	.sectionThree {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.thirdSection-Box {
+		text-align: center;
+		margin-top: 7em;
+		display: flex;
+		justify-content: space-between;
+		gap: 2em;
+		width: 80%;
+		margin-bottom: 22em;
+	}
+
+	.thirdSection-Box--title {
+		text-align: center;
+		font-weight: bold;
+		font-size: 5rem;
+	}
+
+	.thirdSection-Box--img {
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+
+	.thirdSection-Box--text {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	.box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 300px;
+		height: 300px;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		padding: 5em;
+		margin-bottom: 4em;
+	}
 }

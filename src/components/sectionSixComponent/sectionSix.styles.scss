@@ -1,13 +1,12 @@
-.wrapper {
-	// padding-top: 0;
-}
 .sixthSection {
 	padding-top: 0;
 	position: relative;
 	height: 100vh;
+	padding: 3em;
 
 	&-title {
-		font-size: 5rem;
+		margin-top: 2em;
+		font-size: 3rem;
 		text-align: center;
 	}
 
@@ -15,14 +14,13 @@
 		text-align: center;
 		margin: 1.5em auto;
 		font-size: 1.5rem;
-		padding: 0 8em;
-		line-height: 3rem;
+		line-height: 2rem;
 	}
 }
 
 .subscribeForm {
 	margin-top: 5em;
-	width: 60%;
+	width: 100%;
 }
 
 .subscribeInput {
@@ -33,4 +31,40 @@
 	border: none;
 	padding: 0.5em 1em;
 	z-index: 1;
+}
+
+@media (min-width: 768px) {
+	.sixthSection {
+		padding-top: 0;
+		position: relative;
+		height: 100vh;
+
+		&-title {
+			font-size: 5rem;
+			text-align: center;
+		}
+
+		&-description {
+			text-align: center;
+			margin: 1.5em auto;
+			font-size: 1.5rem;
+			padding: 0 8em;
+			line-height: 3rem;
+		}
+	}
+
+	.subscribeForm {
+		margin-top: 5em;
+		width: 60%;
+	}
+
+	.subscribeInput {
+		position: relative;
+		width: 100%;
+		font-size: 1.5rem;
+		border-radius: 50px;
+		border: none;
+		padding: 0.5em 1em;
+		z-index: 1;
+	}
 }

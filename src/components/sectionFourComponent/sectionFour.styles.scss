@@ -3,28 +3,59 @@
 	background-size: cover;
 	width: 100vw;
 	height: 100vh;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
+	padding: 3em;
 }
 
 .fourthSection-rightBox {
 	// background-color: #fff;
-	grid-column: 1/2;
-	margin-left: 7rem;
 }
 
 .fourthSection-description {
-	margin: 4em 0;
+	margin: 3em 0;
 	font-size: 1.5rem;
-	width: 70%;
 	line-height: 1.3;
+	text-align: center;
 }
 
 .fourthSection-title {
-	font-size: 5rem;
+	text-align: center;
+	font-size: 3rem;
+	margin-top: 1em;
 }
 
 .fourthSection-button {
-	width: 40%;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.fourthSection {
+		background-image: url("/fourthSectionBg.png");
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+	}
+
+	.fourthSection-rightBox {
+		// background-color: #fff;
+		grid-column: 1/2;
+		margin-left: 7rem;
+	}
+
+	.fourthSection-description {
+		margin: 4em 0;
+		font-size: 1.5rem;
+		width: 70%;
+		line-height: 1.3;
+	}
+
+	.fourthSection-title {
+		font-size: 5rem;
+	}
+
+	.fourthSection-button {
+		width: 40%;
+	}
 }

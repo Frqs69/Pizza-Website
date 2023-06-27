@@ -11,7 +11,7 @@ export default function Footer() {
 						and Quality Converge for an Unforgettable Dining Experience.
 					</p>
 					<div className='mediaLinksBox'>
-						<a href=''>
+						<a className='mediaLink' href=''>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								width='40'
@@ -23,7 +23,7 @@ export default function Footer() {
 								/>
 							</svg>
 						</a>
-						<a href=''>
+						<a className='mediaLink' href=''>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								width='40'
@@ -46,7 +46,7 @@ export default function Footer() {
 								</g>
 							</svg>
 						</a>
-						<a href=''>
+						<a className='mediaLink' href=''>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								width='40'
@@ -59,7 +59,7 @@ export default function Footer() {
 								/>
 							</svg>
 						</a>
-						<a href=''>
+						<a className='mediaLink' href=''>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								width='40'
