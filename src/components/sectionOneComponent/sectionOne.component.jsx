@@ -5,7 +5,7 @@ export default function SectionOne() {
 	return (
 		<section className='firstSection wrapper' id='Product'>
 			<SvgBackground />
-			<h2 className='firstSection-title'>Popular Menu</h2>
+			<h2 className='firstSection-title'>Local ingredients</h2>
 			<p className='firstSection-description'>
 				Step into a world of culinary delight as we transport your taste buds to
 				the vibrant streets of Naples, Italy.

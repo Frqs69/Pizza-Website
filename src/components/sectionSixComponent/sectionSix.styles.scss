@@ -34,37 +34,30 @@
 }
 
 @media (min-width: 768px) {
+	.wrapperSixthSection {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 66%;
+		margin: 0 auto;
+	}
+
 	.sixthSection {
-		padding-top: 0;
-		position: relative;
-		height: 100vh;
+		padding: 0em;
 
 		&-title {
+			margin-top: 0;
 			font-size: 5rem;
-			text-align: center;
 		}
 
 		&-description {
-			text-align: center;
-			margin: 1.5em auto;
-			font-size: 1.5rem;
 			padding: 0 8em;
 			line-height: 3rem;
 		}
 	}
 
 	.subscribeForm {
-		margin-top: 5em;
 		width: 60%;
-	}
-
-	.subscribeInput {
-		position: relative;
-		width: 100%;
-		font-size: 1.5rem;
-		border-radius: 50px;
-		border: none;
-		padding: 0.5em 1em;
-		z-index: 1;
 	}
 }

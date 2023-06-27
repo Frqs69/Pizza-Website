@@ -36,6 +36,7 @@
 }
 
 .firstSection-Box--text {
+	line-height: 1.7em;
 	font-size: 1rem;
 	text-align: center;
 	padding: 0 3em;
@@ -43,42 +44,24 @@
 
 @media (min-width: 768px) {
 	.firstSection {
-		position: relative;
+		padding: 0;
 		&-title {
-			text-align: center;
+			font-size: 4rem;
+			margin-top: 0;
 		}
 
 		&-description {
-			text-align: center;
-			margin: 1.5em auto;
-			font-size: 1.5rem;
 			padding: 0 8em;
+		}
+
+		&--element {
+			margin: 0;
 		}
 	}
 
 	.firstSection-Box {
-		text-align: center;
-		margin-top: 7em;
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 15em;
-	}
-
-	.firstSection-Box--title {
-		text-align: center;
-		font-weight: bold;
-		font-size: 1.5rem;
-		margin: 1.5em 0;
-	}
-
-	.firstSection-Box--img {
-		margin: 0 auto;
-		border-radius: 50%;
-	}
-
-	.firstSection-Box--text {
-		font-size: 1rem;
-		text-align: center;
-		padding: 0 3em;
+		margin-top: 0;
 	}
 }

@@ -3,7 +3,7 @@ import "./sectionSix.styles.scss";
 
 export default function SectionSix() {
 	return (
-		<section className='sixthSection wrapper' id='Contact'>
+		<section className='sixthSection wrapperSixthSection' id='Contact'>
 			<h2 className='sixthSection-title'>Subscribe</h2>
 			<p className='sixthSection-description'>
 				Be in the know! Subscribe to our newsletter for exclusive pizza updates,

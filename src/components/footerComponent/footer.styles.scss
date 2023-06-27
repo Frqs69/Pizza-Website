@@ -46,21 +46,18 @@ a {
 
 @media (min-width: 768px) {
 	.footer {
-		background-color: rgb(27, 27, 27);
 		padding: 10em 10em;
 	}
 
 	.footerBox {
+		text-align: left;
 		display: flex;
 		justify-content: space-between;
-		margin: 0 auto;
 		width: 66%;
 	}
 
 	.leftColumn-description {
-		font-size: 1rem;
 		width: 70%;
-		margin: 2em 0;
 	}
 
 	a {
@@ -70,7 +67,7 @@ a {
 	}
 
 	.rightColumns {
-		width: 100%;
+		margin-top: 0;
 		display: flex;
 		justify-content: space-between;
 	}
