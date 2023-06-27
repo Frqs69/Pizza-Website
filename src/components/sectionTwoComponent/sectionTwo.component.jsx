@@ -2,7 +2,7 @@ import "./sectionTwo.styles.scss";
 
 export default function SectionTwo() {
 	return (
-		<section className='secondSection'>
+		<section className='secondSection' id='Promo'>
 			<div className='secondSection-rightBox'>
 				<h2 className='secondSection-title'>Free Delivery</h2>
 				<p className='secondSection-description'>

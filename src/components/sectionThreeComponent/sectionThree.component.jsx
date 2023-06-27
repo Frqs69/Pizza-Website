@@ -3,7 +3,7 @@ import "./sectionThree.styles.scss";
 
 export default function SectionThree() {
 	return (
-		<section className='firstSection wrapper'>
+		<section className='firstSection wrapper' id='About'>
 			<SvgBackground />
 			<h2>Statistics</h2>
 			<p className='section-description'>

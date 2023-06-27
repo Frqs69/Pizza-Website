@@ -6,11 +6,21 @@ export default function HeaderComponent() {
 			<nav>
 				<img src='/logo.svg' alt='logo' />
 				<ul className='nav-links'>
-					<li>Home</li>
-					<li>Product</li>
-					<li>Promo</li>
-					<li>About</li>
-					<li>Contact</li>
+					<li>
+						<a href='#'>Home</a>
+					</li>
+					<li>
+						<a href='#Product'>Product</a>
+					</li>
+					<li>
+						<a href='#Promo'>Promo</a>
+					</li>
+					<li>
+						<a href='#About'>About</a>
+					</li>
+					<li>
+						<a href='#Contact'>Contact</a>
+					</li>
 				</ul>
 			</nav>
 			<div className='headerBox'>

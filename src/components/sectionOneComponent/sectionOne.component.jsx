@@ -3,7 +3,7 @@ import "./sectionOne.styles.scss";
 
 export default function SectionOne() {
 	return (
-		<section className='firstSection wrapper'>
+		<section className='firstSection wrapper' id='Product'>
 			<SvgBackground />
 			<h2 className='firstSection-title'>Popular Menu</h2>
 			<p className='firstSection-description'>
