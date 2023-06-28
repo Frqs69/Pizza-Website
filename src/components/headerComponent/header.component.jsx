@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./header.styles.scss";
 
 export default function HeaderComponent() {
@@ -29,7 +31,9 @@ export default function HeaderComponent() {
 					Welcome to Pizzaku, where every slice tells a story of passion,
 					flavor, and authentic Italian craftsmanship. 🍕
 				</p>
-				<button>ORDER NOW</button>
+				<Link to={`/order`}>
+					<button>ORDER NOW</button>
+				</Link>
 			</div>
 		</header>
 	);

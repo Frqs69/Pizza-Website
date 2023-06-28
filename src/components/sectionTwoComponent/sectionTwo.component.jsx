@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./sectionTwo.styles.scss";
 
 export default function SectionTwo() {
@@ -10,7 +12,9 @@ export default function SectionTwo() {
 					complimentary delivery service. Order your favorite pizza and
 					experience the joy of prompt doorstep indulgence.
 				</p>
-				<button className='secondSection-button'>ORDER NOW</button>
+				<Link to={`/order`}>
+					<button className='secondSection-button'>ORDER NOW</button>
+				</Link>
 			</div>
 		</section>
 	);

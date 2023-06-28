@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./sectionFour.styles.scss";
 
 export default function SectionFour() {
@@ -10,7 +12,9 @@ export default function SectionFour() {
 					right to your doorstep at an unbeatable value. Order now and savor the
 					convenience and savings that await you!
 				</p>
-				<button className='fourthSection-button'>ORDER NOW</button>
+				<Link to={`/order`}>
+					<button className='fourthSection-button'>ORDER NOW</button>
+				</Link>
 			</div>
 		</section>
 	);

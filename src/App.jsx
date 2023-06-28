@@ -1,25 +1,25 @@
-import HeaderComponent from "./components/headerComponent/header.component";
-import SectionOne from "./components/sectionOneComponent/sectionOne.component";
-import SectionTwo from "./components/sectionTwoComponent/sectionTwo.component";
-import SectionThree from "./components/sectionThreeComponent/sectionThree.component";
-import SectionFour from "./components/sectionFourComponent/sectionFour.component";
-import SectionFive from "./components/sectionFiveComponent/sectionFive.component";
-import SectionSix from "./components/sectionSixComponent/sectionSix.component";
-import Footer from "./components/footerComponent/footer.component";
-import SvgBackground from "./components/SvgBackgroundComponent/svgBackground.component";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePageRoot from "./homePageRoot";
+import ErrorPage from "./errorPage";
+import OrderPage from "./orderPage";
 import "./App.scss";
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <HomePageRoot />,
+		errorElement: <ErrorPage />,
+	},
+	{
+		path: "/order",
+		element: <OrderPage />,
+	},
+]);
 
 function App() {
 	return (
 		<>
-			<HeaderComponent />
-			<SectionOne />
-			<SectionTwo />
-			<SectionThree />
-			<SectionFour />
-			<SectionFive />
-			<SectionSix />
-			<Footer />
+			<RouterProvider router={router} />
 		</>
 	);
 }
