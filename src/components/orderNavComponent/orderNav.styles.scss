@@ -1,0 +1,34 @@
+.pizzaListNav {
+	display: flex;
+	flex-direction: column;
+}
+
+.imgBox {
+	background-color: #fff;
+	border-radius: 50%;
+	padding: 2em;
+}
+.shoppingCart {
+	width: 20px;
+}
+
+@media (min-width: 768px) {
+	.pizzaListNav {
+		width: 100%;
+		flex-direction: row;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 80%;
+		margin: 5em auto;
+	}
+
+	.imgBox {
+		background-color: #fff;
+		border-radius: 50%;
+		padding: 2em;
+	}
+	.shoppingCart {
+		width: 20px;
+	}
+}

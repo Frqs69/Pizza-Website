@@ -1,7 +1,5 @@
+import PizzaList from "./components/pizzaListComponent/pizzaList.component";
+
 export default function OrderPage() {
-	return (
-		<div>
-			<h2>Order Page </h2>
-		</div>
-	);
+	return <PizzaList />;
 }
