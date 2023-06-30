@@ -1,0 +1,51 @@
+.orderList {
+	position: absolute;
+	left: -200%;
+	top: 90%;
+	color: #000;
+	width: 300px;
+	background-color: #fff;
+	padding: 2em;
+	z-index: 10;
+	border-radius: 10px;
+
+	.orderListTitle {
+		font-size: 2rem;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+}
+
+.orderListItem {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #000;
+	padding-bottom: 1em;
+	font-size: 1.2rem;
+	margin-bottom: 1em;
+	list-style: none;
+}
+
+.product {
+	text-align: center;
+}
+
+.orderListButton {
+	margin-top: 1em;
+	width: 100%;
+	border: 1px solid #000;
+}
+
+@media (min-width: 768px) {
+	.orderList {
+		left: -460%;
+		top: 60%;
+	}
+
+	.orderListButton {
+		margin-top: 2em;
+		padding: 0.5em;
+	}
+}

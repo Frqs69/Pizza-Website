@@ -1,6 +1,11 @@
 .pizzaListNav {
 	display: flex;
 	flex-direction: column;
+	cursor: pointer;
+}
+
+.pizzaList-title {
+	z-index: 2;
 }
 
 .imgBox {
@@ -16,7 +21,7 @@
 	align-items: center;
 	position: absolute;
 	right: -15px;
-	bottom: -15px;
+	top: -15px;
 	background-color: #fff;
 
 	width: 40px;
