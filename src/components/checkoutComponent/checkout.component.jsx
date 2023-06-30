@@ -18,6 +18,13 @@ export default function Checkout() {
 
 	orders.map((order) => (summaryPrice += order.price * order.quantity));
 
+	const handleDelete = (el) => {
+		dispatch({
+			type: "removeOrder",
+			name: el.name,
+		});
+	};
+
 	return (
 		<>
 			<div className='checkoutComponent'></div>
@@ -31,7 +38,9 @@ export default function Checkout() {
 								<img src={order.img} className='pizzaImgCheckout' alt='' />
 								<p className='count'>{order.quantity}x</p>
 								<p className='product'>{order.name}</p>
-								<p className='deleteButton'>X</p>
+								<p className='deleteButton' onClick={() => handleDelete(order)}>
+									X
+								</p>
 							</li>
 						))}
 					</ul>

@@ -9,17 +9,19 @@ export default function OrderNav() {
 	const orders = useContext(OrderContext);
 	const [openOrderNavList, setOpenOrderNavList] = useState(false);
 
-	const orderLength = orders.length;
+	let orderLength = 0;
+
+	orders.map((order) => (orderLength += order.quantity));
 
 	const openNavList = () => setOpenOrderNavList(!openOrderNavList);
 
 	return (
-		<nav className='pizzaListNav' onClick={openNavList}>
+		<nav className='pizzaListNav'>
 			<img src='/logo.svg' alt='logo' />
 			<h2 className='pizzaList-title'>
 				Delicious pizza is already almost at your door.
 			</h2>
-			<div className='imgBox'>
+			<div className='imgBox' onClick={openNavList}>
 				<img className='shoppingCart' src='/cart.svg' alt='shopping cart' />
 				<p className='shoppingCartCount'>{orderLength}</p>
 				{openOrderNavList ? <OrderNavList orders={orders} /> : ""}

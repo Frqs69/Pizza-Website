@@ -1,7 +1,6 @@
 .pizzaListNav {
 	display: flex;
 	flex-direction: column;
-	cursor: pointer;
 }
 
 .pizzaList-title {
@@ -13,6 +12,7 @@
 	background-color: #fff;
 	border-radius: 50%;
 	padding: 2em;
+	cursor: pointer;
 }
 
 .shoppingCartCount {

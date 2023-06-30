@@ -38,6 +38,11 @@
 	border: 1px solid #000;
 }
 
+.deleteButton {
+	padding: 1em 0 1em 1em;
+	cursor: pointer;
+}
+
 @media (min-width: 768px) {
 	.orderList {
 		left: -460%;

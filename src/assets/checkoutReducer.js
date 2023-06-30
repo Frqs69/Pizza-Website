@@ -28,7 +28,7 @@ export default function checkoutReducer(orders, action) {
 				];
 			}
 		case "removeOrder": {
-			return orders.filter((order) => order.id !== action.id);
+			return orders.filter((order) => order.name !== action.name);
 		}
 		default: {
 			throw new Error("Unknown action type" + action.type);
