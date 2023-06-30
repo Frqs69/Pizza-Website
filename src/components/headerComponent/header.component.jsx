@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import Button from "../buttonComponent/button.component";
+
 import "./header.styles.scss";
 
 export default function HeaderComponent() {
@@ -32,7 +34,7 @@ export default function HeaderComponent() {
 					flavor, and authentic Italian craftsmanship. 🍕
 				</p>
 				<Link to={`/order`}>
-					<button>ORDER NOW</button>
+					<Button>ORDER NOW</Button>
 				</Link>
 			</div>
 		</header>

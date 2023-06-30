@@ -4,9 +4,26 @@
 }
 
 .imgBox {
+	position: relative;
 	background-color: #fff;
 	border-radius: 50%;
 	padding: 2em;
+}
+
+.shoppingCartCount {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: -15px;
+	bottom: -15px;
+	background-color: #fff;
+
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: #000;
+	font-size: 1rem;
 }
 .shoppingCart {
 	width: 20px;

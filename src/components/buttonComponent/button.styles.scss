@@ -1,0 +1,18 @@
+.buttonComponent {
+	position: relative;
+	color: rgba(38, 38, 38);
+	background-color: #fff;
+	border-radius: 50px;
+	border: none;
+	font-weight: bold;
+	padding: 1em 2em;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.buttonComponent {
+		width: 50%;
+		font-size: 1.5rem;
+	}
+}

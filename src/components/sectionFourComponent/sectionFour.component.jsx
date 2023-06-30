@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import Button from "../buttonComponent/button.component";
+
 import "./sectionFour.styles.scss";
 
 export default function SectionFour() {
@@ -13,7 +15,7 @@ export default function SectionFour() {
 					convenience and savings that await you!
 				</p>
 				<Link to={`/order`}>
-					<button className='fourthSection-button'>ORDER NOW</button>
+					<Button className='fourthSection-button'>ORDER NOW</Button>
 				</Link>
 			</div>
 		</section>

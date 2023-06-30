@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import Button from "../buttonComponent/button.component";
+
 import "./sectionTwo.styles.scss";
 
 export default function SectionTwo() {
@@ -13,7 +15,7 @@ export default function SectionTwo() {
 					experience the joy of prompt doorstep indulgence.
 				</p>
 				<Link to={`/order`}>
-					<button className='secondSection-button'>ORDER NOW</button>
+					<Button className='secondSection-button'>ORDER NOW</Button>
 				</Link>
 			</div>
 		</section>

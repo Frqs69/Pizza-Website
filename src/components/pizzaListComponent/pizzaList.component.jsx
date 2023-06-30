@@ -1,5 +1,6 @@
 import { pizzaData } from "./../../assets/pizzaData";
 import OrderNav from "../orderNavComponent/orderNav.component";
+import Button from "../buttonComponent/button.component";
 
 import "./pizzaList.styles.scss";
 
@@ -17,7 +18,7 @@ export default function PizzaList() {
 							<p className='pizzaDescription'>{el.description}</p>
 							<div className=''>
 								<p className='pizzaPrice'>Price {el.price}€</p>
-								<button className='pizzaAddToCartBtn'>Add to cart</button>
+								<Button className='pizzaAddToCartBtn'>Add to cart</Button>
 							</div>
 						</div>
 					))}

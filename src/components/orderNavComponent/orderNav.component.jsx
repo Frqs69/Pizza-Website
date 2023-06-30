@@ -9,6 +9,7 @@ export default function OrderNav() {
 			</h2>
 			<div className='imgBox'>
 				<img className='shoppingCart' src='/cart.svg' alt='shopping cart' />
+				<p className='shoppingCartCount'>0</p>
 			</div>
 		</nav>
 	);
