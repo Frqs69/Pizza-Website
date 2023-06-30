@@ -5,6 +5,10 @@ import OrderPage from "./orderPage";
 import CheckoutPage from "./checkoutPage";
 import "./App.scss";
 
+import checkoutReducer from "./assets/checkoutReducer";
+import { OrderContext, OrderDispatchContext } from "./assets/checkoutContext";
+import { useReducer } from "react";
+
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -22,10 +26,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+	const [orders, dispatch] = useReducer(checkoutReducer, []);
 	return (
-		<>
-			<RouterProvider router={router} />
-		</>
+		<OrderContext.Provider value={orders}>
+			<OrderDispatchContext.Provider value={dispatch}>
+				<RouterProvider router={router} />
+			</OrderDispatchContext.Provider>
+		</OrderContext.Provider>
 	);
 }
 

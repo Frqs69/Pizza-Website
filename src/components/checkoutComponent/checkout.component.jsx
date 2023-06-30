@@ -1,4 +1,9 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import {
+	OrderContext,
+	OrderDispatchContext,
+} from "../../assets/checkoutContext";
 
 import OrderNav from "../orderNavComponent/orderNav.component";
 import Button from "../buttonComponent/button.component";
@@ -6,6 +11,13 @@ import Button from "../buttonComponent/button.component";
 import "./checkout.styles.scss";
 
 export default function Checkout() {
+	const orders = useContext(OrderContext);
+	const dispatch = useContext(OrderDispatchContext);
+
+	let summaryPrice = 0;
+
+	orders.map((order) => (summaryPrice += order.price * order.quantity));
+
 	return (
 		<>
 			<div className='checkoutComponent'></div>
@@ -14,34 +26,18 @@ export default function Checkout() {
 				<div className='checkoutList'>
 					<h2>Your Order</h2>
 					<ul>
-						<li className='checkoutListItem'>
-							<img src='/HeroImage.png' className='pizzaImgCheckout' alt='' />
-							<p className='count'>1x</p>
-							<p className='product'>Margerita</p>
-							<p className='deleteButton'>X</p>
-						</li>
-						<li className='checkoutListItem'>
-							<img src='/HeroImage.png' className='pizzaImgCheckout' alt='' />
-							<p className='count'>1x</p>
-							<p className='product'>Veggie supreme chicken</p>
-							<p className='deleteButton'>X</p>
-						</li>
-						<li className='checkoutListItem'>
-							<img src='/HeroImage.png' className='pizzaImgCheckout' alt='' />
-							<p className='count'>1x</p>
-							<p className='product'>Veggie supreme chicken</p>
-							<p className='deleteButton'>X</p>
-						</li>
-						<li className='checkoutListItem'>
-							<img src='/HeroImage.png' className='pizzaImgCheckout' alt='' />
-							<p className='count'>1x</p>
-							<p className='product'>Veggie supreme chicken</p>
-							<p className='deleteButton'>X</p>
-						</li>
+						{orders.map((order) => (
+							<li className='checkoutListItem'>
+								<img src={order.img} className='pizzaImgCheckout' alt='' />
+								<p className='count'>{order.quantity}x</p>
+								<p className='product'>{order.name}</p>
+								<p className='deleteButton'>X</p>
+							</li>
+						))}
 					</ul>
 					<div className='summaryBox'>
 						<p className='summaryBox-title'>Summary:</p>
-						<span className='summaryBox-value'>20$</span>
+						<span className='summaryBox-value'>{summaryPrice}€</span>
 					</div>
 					<div className='paymentButtonBox'>
 						<Link to={"/order"}>

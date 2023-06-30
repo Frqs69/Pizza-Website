@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { OrderContext } from "../../assets/checkoutContext";
 
 import OrderNavList from "../orderNavListComponent/orderNavList.component";
 
 import "./orderNav.styles.scss";
 
 export default function OrderNav() {
+	const orders = useContext(OrderContext);
 	const [openOrderNavList, setOpenOrderNavList] = useState(false);
+
+	const orderLength = orders.length;
 
 	const openNavList = () => setOpenOrderNavList(!openOrderNavList);
 
@@ -17,8 +21,8 @@ export default function OrderNav() {
 			</h2>
 			<div className='imgBox'>
 				<img className='shoppingCart' src='/cart.svg' alt='shopping cart' />
-				<p className='shoppingCartCount'>0</p>
-				{openOrderNavList ? <OrderNavList /> : ""}
+				<p className='shoppingCartCount'>{orderLength}</p>
+				{openOrderNavList ? <OrderNavList orders={orders} /> : ""}
 			</div>
 		</nav>
 	);
