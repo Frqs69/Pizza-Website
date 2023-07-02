@@ -16,17 +16,24 @@ export default function OrderNavList({ orders }) {
 
 	return (
 		<div className='orderList'>
+			{console.log("orders", orders.length)}
 			<p className='orderListTitle'>Your Order</p>
 			<ul>
-				{orders.map((order) => (
-					<li className='orderListItem' key={order.id}>
-						<p className='count'>{order.quantity}x</p>
-						<p className='product'>{order.name}</p>
-						<p className='deleteButton' onClick={() => handleDelete(order)}>
-							X
-						</p>
-					</li>
-				))}
+				{orders.length !== 0 ? (
+					orders.map((order) => (
+						<li className='orderListItem' key={order.id}>
+							<p className='count'>{order.quantity}x</p>
+							<p className='product'>{order.name}</p>
+							<p
+								className='deleteButtonNavList'
+								onClick={() => handleDelete(order)}>
+								X
+							</p>
+						</li>
+					))
+				) : (
+					<p className='placeholderList'>Cart is empty</p>
+				)}
 			</ul>
 			<Link to='/checkout'>
 				<Button className='orderListButton'>Checkout</Button>

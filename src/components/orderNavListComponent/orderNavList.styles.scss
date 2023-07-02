@@ -8,6 +8,7 @@
 	padding: 2em;
 	z-index: 10;
 	border-radius: 10px;
+	cursor: default;
 
 	.orderListTitle {
 		font-size: 2rem;
@@ -38,9 +39,13 @@
 	border: 1px solid #000;
 }
 
-.deleteButton {
-	padding: 1em 0 1em 1em;
+.deleteButtonNavList {
 	cursor: pointer;
+}
+
+.placeholderList {
+	margin-bottom: 1em;
+	font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -52,5 +57,10 @@
 	.orderListButton {
 		margin-top: 2em;
 		padding: 0.5em;
+	}
+
+	.placeholderList {
+		margin-bottom: 0;
+		font-size: 1.5rem;
 	}
 }
