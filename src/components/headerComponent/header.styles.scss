@@ -17,15 +17,6 @@
 	background: rgba(0, 0, 0, 0.6);
 }
 
-nav {
-	display: flex;
-	align-items: center;
-}
-
-.nav-links--desktop {
-	display: none;
-}
-
 h1 {
 	position: relative;
 	font-size: 3rem;
@@ -69,19 +60,6 @@ img {
 		);
 	}
 
-	.nav-links--desktop {
-		display: flex;
-		gap: 1em;
-		margin-left: 4em;
-		font-size: 1.3rem;
-		text-transform: uppercase;
-		position: relative;
-
-		li {
-			list-style: none;
-		}
-	}
-
 	h1 {
 		position: relative;
 		font-size: 5rem;
@@ -96,7 +74,6 @@ img {
 		line-height: 1.5em;
 		width: 80%;
 	}
-
 
 	.headerBox {
 		display: flex;
