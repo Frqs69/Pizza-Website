@@ -75,12 +75,26 @@
 	cursor: pointer;
 }
 
+.emptyCartInfo {
+	width: 100%;
+	font-size: 1rem;
+	margin: 2em auto;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(255, 135, 135);
+}
+
 .placeholderCheckout {
 	font-size: 1.5rem;
 	margin: 2em 0;
 }
 
 @media (min-width: 768px) {
+	.emptyCartInfo {
+		text-align: right;
+		font-size: 1.2rem;
+	}
+
 	.pizzaImgCheckout {
 		display: block;
 		border-radius: 10px;

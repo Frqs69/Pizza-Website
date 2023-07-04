@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import {
 	OrderContext,
 	OrderDispatchContext,
@@ -13,6 +13,7 @@ import "./checkout.styles.scss";
 export default function Checkout() {
 	const orders = useContext(OrderContext);
 	const dispatch = useContext(OrderDispatchContext);
+	const [checkEmptyCart, setCheckEmptyCart] = useState(false);
 
 	let summaryPrice = 0;
 
@@ -23,6 +24,13 @@ export default function Checkout() {
 			type: "removeOrder",
 			name: el.name,
 		});
+	};
+
+	const handleProceed = () => {
+		if (orders.length === 0) {
+			setCheckEmptyCart(true);
+			return;
+		}
 	};
 
 	return (
@@ -58,8 +66,15 @@ export default function Checkout() {
 						<Link to={"/order"}>
 							<Button className='backButton'>Back</Button>
 						</Link>
-						<Button className='paymentButton'>Proceed Checkout</Button>
+						<Button className='paymentButton' onClick={handleProceed}>
+							Proceed Checkout
+						</Button>
 					</div>
+					{checkEmptyCart && (
+						<p className='emptyCartInfo'>
+							*No pizza in your cart, please order some before payment
+						</p>
+					)}
 				</div>
 			</div>
 		</>
