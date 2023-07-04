@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import { OrderContext } from "../../assets/checkoutContext";
 
@@ -10,6 +10,7 @@ import "./orderNav.styles.scss";
 
 export default function OrderNav() {
 	const orders = useContext(OrderContext);
+	const windowSize = useRef(window.innerWidth);
 
 	const { ref, isComponentVisible, setIsComponentVisible } =
 		useComponentVisible(false);
@@ -20,20 +21,45 @@ export default function OrderNav() {
 
 	return (
 		<nav className='pizzaListNav'>
-			<Link to='/'>
-				<img src='/logo.svg' alt='logo' />
-			</Link>
-
-			<h2 className='pizzaList-title'>
-				Delicious pizza is already almost at your door.
-			</h2>
-			<div className='imgBox' onClick={() => setIsComponentVisible(true)}>
-				<img className='shoppingCart' src='/cart.svg' alt='shopping cart' />
-				<p className='shoppingCartCount'>{orderLength}</p>
-				<div ref={ref}>
-					{isComponentVisible ? <OrderNavList orders={orders} /> : ""}
-				</div>
-			</div>
+			{windowSize.current > 768 ? (
+				<>
+					<Link to='/'>
+						<img src='/logo.svg' alt='logo' />
+					</Link>
+					<h2 className='pizzaList-title'>
+						Delicious pizza is already almost at your door.
+					</h2>
+					<div className='imgBox' onClick={() => setIsComponentVisible(true)}>
+						<img className='shoppingCart' src='/cart.svg' alt='shopping cart' />
+						<p className='shoppingCartCount'>{orderLength}</p>
+						<div ref={ref}>
+							{isComponentVisible ? <OrderNavList orders={orders} /> : ""}
+						</div>
+					</div>
+				</>
+			) : (
+				<>
+					<div className='mobilePosition'>
+						<Link to='/'>
+							<img src='/logo.svg' alt='logo' />
+						</Link>
+						<div className='imgBox' onClick={() => setIsComponentVisible(true)}>
+							<img
+								className='shoppingCart'
+								src='/cart.svg'
+								alt='shopping cart'
+							/>
+							<p className='shoppingCartCount'>{orderLength}</p>
+							<div ref={ref}>
+								{isComponentVisible ? <OrderNavList orders={orders} /> : ""}
+							</div>
+						</div>
+					</div>
+					<h2 className='pizzaList-title'>
+						Delicious pizza is already almost at your door.
+					</h2>
+				</>
+			)}
 		</nav>
 	);
 }
