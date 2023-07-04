@@ -4,6 +4,7 @@ import "./sectionSix.styles.scss";
 export default function SectionSix() {
 	return (
 		<section className='sixthSection wrapperSixthSection' id='Contact'>
+			<SvgBackground />
 			<h2 className='sixthSection-title'>Subscribe</h2>
 			<p className='sixthSection-description'>
 				Be in the know! Subscribe to our newsletter for exclusive pizza updates,
@@ -16,7 +17,6 @@ export default function SectionSix() {
 					placeholder='Your Email'
 				/>
 			</form>
-			<SvgBackground />
 		</section>
 	);
 }
