@@ -1,4 +1,5 @@
-import { useContext, useReducer } from "react";
+import { useContext } from "react";
+import { Icon } from "@iconify/react";
 
 import { pizzaData } from "./../../assets/pizzaData";
 import OrderNav from "../orderNavComponent/orderNav.component";
@@ -23,7 +24,7 @@ export default function PizzaList() {
 			id: nextId++,
 			name: el.name,
 			price: el.price,
-			img: el.img
+			img: el.img,
 		});
 	};
 
@@ -35,6 +36,15 @@ export default function PizzaList() {
 				<div className='desktopGrid'>
 					{pizzaData.map((el) => (
 						<div className='pizzaBox' key={el.id}>
+							{el.veg && (
+								<Icon
+									icon='fa-solid:leaf'
+									color='#00ff08'
+									className='vegeLeaf'
+									width='50px'
+								/>
+							)}
+
 							<img className='pizzaImg' src={el.img} alt={el.name} />
 							<h3 className='pizzaName'>{el.name}</h3>
 							<p className='pizzaDescription'>{el.description}</p>
