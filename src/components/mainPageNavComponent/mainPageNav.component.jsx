@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+
 import "./mainPageNav.styles.scss";
 
 export default function MainPageNav() {
@@ -13,7 +14,8 @@ export default function MainPageNav() {
 		<>
 			{windowSize.current > 768 ? (
 				<nav className='navDesktop'>
-					<img src='/logo.svg' alt='logo' />
+					<img src='/logo.png' alt='logo' />
+
 					<ul className='nav-links--desktop'>
 						<li>
 							<a href='#'>Home</a>
@@ -34,7 +36,7 @@ export default function MainPageNav() {
 				</nav>
 			) : (
 				<nav className='navMobile'>
-					<img src='/logo.svg' alt='logo' />
+					<img src='/logo.png' alt='logo' />
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						width='50'

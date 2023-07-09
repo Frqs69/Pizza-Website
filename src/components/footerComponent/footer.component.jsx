@@ -5,7 +5,7 @@ export default function Footer() {
 		<footer className='footer'>
 			<div className='footerBox'>
 				<div className='leftColumn'>
-					<img src='/logo.svg' alt='' />
+					<img src='/logo.png' alt='' />
 					<p className='leftColumn-description'>
 						Unleashing Pizza's Irresistible Magic: Where Flavor, Craftsmanship,
 						and Quality Converge for an Unforgettable Dining Experience.

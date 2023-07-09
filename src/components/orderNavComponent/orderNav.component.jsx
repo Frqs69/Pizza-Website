@@ -24,7 +24,7 @@ export default function OrderNav() {
 			{windowSize.current > 768 ? (
 				<>
 					<Link to='/'>
-						<img src='/logo.svg' alt='logo' />
+						<img src='/logo.png' alt='logo' />
 					</Link>
 					<h2 className='pizzaList-title'>
 						Delicious pizza is already almost at your door.
@@ -41,7 +41,7 @@ export default function OrderNav() {
 				<>
 					<div className='mobilePosition'>
 						<Link to='/'>
-							<img src='/logo.svg' alt='logo' />
+							<img src='/logo.png' alt='logo' />
 						</Link>
 						<div className='imgBox' onClick={() => setIsComponentVisible(true)}>
 							<img
