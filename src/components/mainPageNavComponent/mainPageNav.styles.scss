@@ -55,11 +55,12 @@ svg {
 		display: block;
 		display: flex;
 		align-items: center;
+		min-width: 100px;
 	}
 
 	.nav-links--desktop {
 		display: flex;
-		gap: 1em;
+		gap: 0.3em;
 		margin-left: 4em;
 		font-size: 1.3rem;
 		text-transform: uppercase;
