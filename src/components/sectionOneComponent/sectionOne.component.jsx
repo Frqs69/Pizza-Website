@@ -79,15 +79,15 @@ export default function SectionOne() {
 							alt='slice of pizza'
 						/>
 						<h3 className='firstSection-Box--title'>Crafted to Perfection</h3>
-							<p className='firstSection-Box--text'>
-								Experience pizza perfection with our artisanal pies, meticulously
-								made using top-tier ingredients, delivering an authentic Italian
-								feast.
-							</p>
-						</div>
-						<div className='firstSection-Box--element'>
-							<img
-								className='firstSection-Box--img'
+						<p className='firstSection-Box--text'>
+							Experience pizza perfection with our artisanal pies, meticulously
+							made using top-tier ingredients, delivering an authentic Italian
+							feast.
+						</p>
+					</div>
+					<div className='firstSection-Box--element'>
+						<img
+							className='firstSection-Box--img'
 							src='/firstSectionThree.png'
 							alt='slice of pizza'
 						/>

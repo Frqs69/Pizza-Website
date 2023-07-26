@@ -20,9 +20,7 @@
 }
 
 .svg3 {
-	position: absolute;
-	bottom: 30em;
-	left: -5em;
+	display: none;
 }
 
 .svg4 {
@@ -37,9 +35,7 @@
 }
 
 .svg6 {
-	position: absolute;
-	bottom: 70em;
-	left: 25em;
+	display: none;
 }
 
 .svg8 {
@@ -76,6 +72,7 @@
 	}
 
 	.svg3 {
+		display: block;
 		position: absolute;
 		bottom: 8em;
 		left: 35em;
@@ -88,6 +85,7 @@
 	}
 
 	.svg6 {
+		display: block;
 		position: absolute;
 		bottom: 10em;
 		left: -15em;
