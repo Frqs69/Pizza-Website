@@ -49,7 +49,9 @@ export default function PizzaList() {
 							<h3 className='pizzaName'>{el.name}</h3>
 							<p className='pizzaDescription'>{el.description}</p>
 							<div className=''>
-								<p className='pizzaPrice'>Price {el.price}€</p>
+								<p className='pizzaPrice'>
+									Price <span style={{ fontWeight: "bold" }}>{el.price} </span>€
+								</p>
 								<Button
 									onClick={() => handleAddOrder(el)}
 									className='pizzaAddToCartBtn'>
